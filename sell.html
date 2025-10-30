@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scraplink - Sell Your Scrap</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1ed24b",
+              "background-light": "#f6f8f6",
+              "background-dark": "#112115",
+              "text-light": "#0c150e",
+              "text-dark": "#e8f3ea",
+              "border-light": "#d1e6d6",
+              "border-dark": "#2a3c30",
+            },
+            fontFamily: {
+              display: ["Work Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex min-h-screen w-full flex-col">
+<header class="border-b border-border-light dark:border-border-dark">
+<div class="container mx-auto flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">recycling</span><path clip-rule="evenodd" d="M12 2L2 7V17L12 22L22 17V7L12 2ZM4 8.236L12 12.536L20 8.236V16.764L12 20.464L4 16.764V8.236Z" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-xl font-bold">Scraplink</h1>
+</div>
+<nav class="hidden items-center gap-6 text-sm font-medium md:flex">
+<a class="transition-colors hover:text-primary" href="#">How it works</a>
+<a class="transition-colors hover:text-primary" href="#">Pricing</a>
+<a class="transition-colors hover:text-primary" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="md:hidden">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-1 items-center justify-center py-12 sm:py-16 md:py-20">
+<div class="w-full max-w-2xl px-4">
+<div class="mx-auto flex flex-col gap-8">
+<div>
+<p class="mb-2 text-sm font-medium text-text-light/70 dark:text-text-dark/70">Step 1 of 4</p>
+<div class="h-2 w-full rounded-full bg-border-light dark:bg-border-dark">
+<div class="h-2 w-1/4 rounded-full bg-primary"></div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">What type of scrap do you have?</h2>
+<div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+<label class="group relative flex cursor-pointer items-center justify-center rounded-lg border-2 border-border-light bg-background-light p-4 text-center font-semibold transition-all hover:border-primary/50 dark:border-border-dark dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary dark:has-[:checked]:bg-primary/20">
+<input class="peer absolute h-full w-full opacity-0" name="scrap_type" type="radio" value="iron"/>
+<span>Iron</span>
+</label>
+<label class="group relative flex cursor-pointer items-center justify-center rounded-lg border-2 border-border-light bg-background-light p-4 text-center font-semibold transition-all hover:border-primary/50 dark:border-border-dark dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary dark:has-[:checked]:bg-primary/20">
+<input class="peer absolute h-full w-full opacity-0" name="scrap_type" type="radio" value="aluminum"/>
+<span>Aluminum</span>
+</label>
+<label class="group relative flex cursor-pointer items-center justify-center rounded-lg border-2 border-border-light bg-background-light p-4 text-center font-semibold transition-all hover:border-primary/50 dark:border-border-dark dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary dark:has-[:checked]:bg-primary/20">
+<input class="peer absolute h-full w-full opacity-0" name="scrap_type" type="radio" value="copper"/>
+<span>Copper</span>
+</label>
+<label class="group relative flex cursor-pointer items-center justify-center rounded-lg border-2 border-border-light bg-background-light p-4 text-center font-semibold transition-all hover:border-primary/50 dark:border-border-dark dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary dark:has-[:checked]:bg-primary/20">
+<input class="peer absolute h-full w-full opacity-0" name="scrap_type" type="radio" value="brass"/>
+<span>Brass</span>
+</label>
+<label class="group relative flex cursor-pointer items-center justify-center rounded-lg border-2 border-border-light bg-background-light p-4 text-center font-semibold transition-all hover:border-primary/50 dark:border-border-dark dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary dark:has-[:checked]:bg-primary/20">
+<input class="peer absolute h-full w-full opacity-0" name="scrap_type" type="radio" value="steel"/>
+<span>Steel</span>
+</label>
+<label class="group relative flex cursor-pointer items-center justify-center rounded-lg border-2 border-border-light bg-background-light p-4 text-center font-semibold transition-all hover:border-primary/50 dark:border-border-dark dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary dark:has-[:checked]:bg-primary/20">
+<input class="peer absolute h-full w-full opacity-0" name="scrap_type" type="radio" value="other"/>
+<span>Other</span>
+</label>
+</div>
+</div>
+<div class="flex justify-end pt-4">
+<button class="flex min-w-[120px] items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-bold text-background-dark transition-opacity hover:opacity-90">
+<span>Next</span>
+<span class="material-symbols-outlined"> arrow_forward </span>
+<script>
+  document.querySelectorAll('button').forEach(btn => {
+    if (btn.textContent.includes('Next')) {
+      btn.addEventListener('click', () => {
+        window.location.href = 'sellafter.html'; // your sell page filename
+      });
+    }
+  });
+</script>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

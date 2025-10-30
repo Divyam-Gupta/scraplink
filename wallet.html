@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1ed24b',
+              'background-light': '#f6f8f6',
+              'background-dark': '#112115',
+            },
+            fontFamily: {
+              display: ['Work Sans'],
+            },
+            borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 px-10 py-4">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="text-primary">
+<svg class="size-7" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.05 43.85L12.2 41L29.35 23.85L12.2 6.7L15.05 3.85L35.05 23.85L15.05 43.85Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-bold">Scraplink</h2>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Sell Scrap</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Pricing</a>
+<a class="text-sm font-medium hover:text-primary" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex size-10 cursor-pointer items-center justify-center rounded-full bg-background-light text-slate-700 hover:bg-primary/10 hover:text-primary dark:bg-background-dark dark:text-slate-300 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtbncr5URHZfqH89rzsLuaungRCc6gVDQLwPMVZMx_qUH7slnA5Xf2RtTfZ_ufW8MRZs1olbuo6UZi88A6GgUzjM3V10tAPmKtBHB1bhfNM6UMhMDDSPb2kIzzheBwW7SKOeyUMSn-osxwrYetfD41PzMvL1CFdLaJCgvvKu0o7Zb-G9xkWoxtPmBdzlm7Z_BRSoPJbChfgDNvL7FJDARTh4AJLNSG-HCD8yKJ1Btes4E0ipATrhWtmjWkf7QygBMIIc7L_gc1Vh4");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 lg:py-16">
+<div class="w-full max-w-5xl px-4 sm:px-6 lg:px-8">
+<div class="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+<h1 class="text-3xl font-bold text-slate-900 dark:text-white">Earnings &amp; Payouts</h1>
+<button class="flex items-center justify-center gap-2 rounded bg-primary px-5 py-3 text-sm font-bold text-white shadow-sm transition-transform hover:scale-105">
+<span class="material-symbols-outlined text-base"> account_balance_wallet </span>
+<span>Withdraw Funds</span>
+</button>
+</div>
+<div class="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+<div class="flex flex-col gap-2 rounded-lg border border-primary/20 bg-background-light p-6 dark:bg-background-dark">
+<p class="text-sm font-medium text-slate-600 dark:text-slate-400">Total Earnings</p>
+<p class="text-4xl font-bold text-slate-900 dark:text-white">₹1,25,450.75</p>
+</div>
+<div class="flex flex-col gap-2 rounded-lg border border-primary/20 bg-background-light p-6 dark:bg-background-dark">
+<p class="text-sm font-medium text-slate-600 dark:text-slate-400">Available for Withdrawal</p>
+<p class="text-4xl font-bold text-slate-900 dark:text-white">₹85,200.00</p>
+</div>
+</div>
+<div class="flex items-center justify-between pb-4 pt-6">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Payout History</h2>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded border border-primary/30 bg-background-light px-4 py-2 text-sm font-medium text-slate-700 hover:bg-primary/10 dark:border-primary/50 dark:bg-background-dark dark:text-slate-300 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined mr-2 text-base"> filter_list </span>
+                  Filter
+                </button>
+<button class="flex items-center justify-center rounded border border-primary/30 bg-background-light px-4 py-2 text-sm font-medium text-slate-700 hover:bg-primary/10 dark:border-primary/50 dark:bg-background-dark dark:text-slate-300 dark:hover:bg-primary/20">
+<span class="material-symbols-outlined mr-2 text-base"> download </span>
+                  Export
+                </button>
+</div>
+</div>
+<div class="overflow-x-auto rounded-lg border border-primary/20 bg-background-light dark:bg-background-dark">
+<table class="w-full text-left">
+<thead class="border-b border-primary/20 bg-background-light dark:bg-background-dark">
+<tr>
+<th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Date</th>
+<th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Amount</th>
+<th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Status</th>
+<th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-primary/20">
+<tr class="hover:bg-primary/5 dark:hover:bg-primary/10">
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-700 dark:text-slate-300">2024-07-20</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-800 dark:text-slate-200">₹2,500.00</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm">
+<span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary"> Completed </span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 dark:hover:bg-primary/10">
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-700 dark:text-slate-300">2024-07-15</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-800 dark:text-slate-200">₹3,000.00</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm">
+<span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary"> Completed </span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 dark:hover:bg-primary/10">
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-700 dark:text-slate-300">2024-07-10</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-800 dark:text-slate-200">₹2,000.00</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm">
+<span class="inline-flex items-center rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-600 dark:text-amber-500">
+                        Pending
+                      </span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 dark:hover:bg-primary/10">
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-700 dark:text-slate-300">2024-07-05</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-800 dark:text-slate-200">₹3,500.00</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm">
+<span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary"> Completed </span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 dark:hover:bg-primary/10">
+<td class="px-6 py-4 whitespace-nowrap text-sm text-slate-700 dark:text-slate-300">2024-07-01</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-800 dark:text-slate-200">₹1,500.00</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm">
+<span class="inline-flex items-center rounded-full bg-red-500/10 px-3 py-1 text-xs font-semibold text-red-600 dark:text-red-500">
+                        Failed
+                      </span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+<a class="text-primary hover:underline" href="#">View Details</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-6 flex justify-center">
+<nav aria-label="Pagination">
+<ul class="inline-flex items-center space-x-1 rounded-md text-sm">
+<li>
+<a class="inline-flex h-8 w-8 items-center justify-center rounded-full text-slate-500 hover:bg-primary/10 hover:text-primary dark:text-slate-400 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> chevron_left </span>
+</a>
+</li>
+<li>
+<a aria-current="page" class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-white" href="#">
+                      1
+                    </a>
+</li>
+<li>
+<a class="inline-flex h-8 w-8 items-center justify-center rounded-full text-slate-500 hover:bg-primary/10 hover:text-primary dark:text-slate-400 dark:hover:bg-primary/20" href="#">
+                      2
+                    </a>
+</li>
+<li>
+<a class="inline-flex h-8 w-8 items-center justify-center rounded-full text-slate-500 hover:bg-primary/10 hover:text-primary dark:text-slate-400 dark:hover:bg-primary/20" href="#">
+                      3
+                    </a>
+</li>
+<li><span class="px-2 text-slate-400">...</span></li>
+<li>
+<a class="inline-flex h-8 w-8 items-center justify-center rounded-full text-slate-500 hover:bg-primary/10 hover:text-primary dark:text-slate-400 dark:hover:bg-primary/20" href="#">
+                      10
+                    </a>
+</li>
+<li>
+<a class="inline-flex h-8 w-8 items-center justify-center rounded-full text-slate-500 hover:bg-primary/10 hover:text-primary dark:text-slate-400 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined"> chevron_right </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

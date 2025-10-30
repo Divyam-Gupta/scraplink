@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scraplink - Pickup Progress</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1ed24b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112115",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-primary/20 dark:border-primary/10">
+<nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<span class="material-symbols-outlined text-primary text-3xl">recycling</span></svg>
+<h1 class="text-2xl font-bold text-gray-900 dark:text-white">Scraplink</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">How it works</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Pricing</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-white font-bold text-sm px-6 py-2.5 rounded-lg hover:bg-primary/90 transition-colors">Profile</button>
+</nav>
+</header>
+<main class="flex-grow container mx-auto px-6 py-12">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-8">Pickup Request Progress</h2>
+<div class="bg-white dark:bg-background-dark/50 rounded-xl shadow-sm p-8 space-y-10">
+<ol class="relative grid grid-cols-4 text-center">
+<li class="relative">
+<div class="flex items-center justify-center w-full">
+<div class="absolute w-full h-1 bg-primary/20 dark:bg-primary/10 top-1/2 -translate-y-1/2 left-0"></div>
+<div class="relative z-10 flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+</div>
+<div class="mt-3">
+<h3 class="font-semibold text-gray-800 dark:text-white">Driver on the way</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">ETA: 10:30 AM</p>
+</div>
+</li>
+<li class="relative">
+<div class="flex items-center justify-center w-full">
+<div class="absolute w-full h-1 bg-primary/20 dark:bg-primary/10 top-1/2 -translate-y-1/2"></div>
+<div class="relative z-10 flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+</div>
+<div class="mt-3">
+<h3 class="font-semibold text-gray-800 dark:text-white">Driver Arrived</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Waiting for scrap</p>
+</div>
+</li>
+<li class="relative">
+<div class="flex items-center justify-center w-full">
+<div class="absolute w-full h-1 bg-primary/20 dark:bg-primary/10 top-1/2 -translate-y-1/2"></div>
+<div class="relative z-10 flex items-center justify-center w-8 h-8 rounded-full bg-background-light dark:bg-background-dark border-2 border-primary">
+<span class="material-symbols-outlined text-primary text-base">inventory_2</span>
+</div>
+</div>
+<div class="mt-3">
+<h3 class="font-medium text-gray-500 dark:text-gray-400">Scrap Received</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Weight: 25 kg</p>
+</div>
+</li>
+<li class="relative">
+<div class="flex items-center justify-center w-full">
+<div class="absolute w-1/2 h-1 bg-primary/20 dark:bg-primary/10 top-1/2 -translate-y-1/2 right-0"></div>
+<div class="relative z-10 flex items-center justify-center w-8 h-8 rounded-full bg-background-light dark:bg-background-dark border-2 border-primary/40 dark:border-primary/20">
+<span class="material-symbols-outlined text-primary/40 dark:text-primary/20 text-base">payments</span>
+</div>
+</div>
+<div class="mt-3">
+<h3 class="font-medium text-gray-500 dark:text-gray-400">Payment Processed</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Amount: ₹500</p>
+</div>
+</li>
+</ol>
+<div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+<div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Pickup Details</h3>
+<div class="space-y-4 text-sm">
+<div class="flex justify-between border-b border-primary/10 dark:border-primary/5 pb-3">
+<span class="text-gray-500 dark:text-gray-400">Request ID</span>
+<span class="font-medium text-gray-800 dark:text-gray-200">#12345</span>
+</div>
+<div class="flex justify-between border-b border-primary/10 dark:border-primary/5 pb-3">
+<span class="text-gray-500 dark:text-gray-400">Date &amp; Time</span>
+<span class="font-medium text-gray-800 dark:text-gray-200">July 26, 2024, 10:00 AM</span>
+</div>
+<div class="flex justify-between border-b border-primary/10 dark:border-primary/5 pb-3">
+<span class="text-gray-500 dark:text-gray-400">Address</span>
+<span class="font-medium text-gray-800 dark:text-gray-200 text-right">123, Gandhi Nagar, Mumbai</span>
+</div>
+<div class="flex justify-between border-b border-primary/10 dark:border-primary/5 pb-3">
+<span class="text-gray-500 dark:text-gray-400">Material</span>
+<span class="font-medium text-gray-800 dark:text-gray-200">Mixed Scrap Metal</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500 dark:text-gray-400">Payment Method</span>
+<span class="font-medium text-gray-800 dark:text-gray-200">UPI</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Driver Information</h3>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark p-4 rounded-xl border border-primary/20 dark:border-primary/10">
+<img alt="Driver photo" class="h-16 w-16 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_xD2MDyNzisHkPm3aJ_q-s0uAtRfne6ZV1uMY-KwVvjfD4-MxE5xa7rQmDF16f-KzHk7emrZb5llHXtXC-XEKGyx-EmM5dVgayXlgi-C5k4HolywPauLGqKl0Xh912gIIcjMLFCRrineL9qogvtlfoOVKCUXd7vzpD94gHgEsMqPzIZFX8B_haemL8puwwwENB7jRg83jLFIjJSCiFzURRVXFBcPb5COaGYS8rObWso9IRlSWWrxKLgY95-JKWHCw7ceqcXxD0SY"/>
+<div class="flex-grow">
+<p class="font-semibold text-lg text-gray-900 dark:text-white">Rajesh Kumar</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Driver ID: #67890</p>
+<div class="mt-2 flex gap-2">
+<button class="flex-1 text-sm bg-primary/10 dark:bg-primary/20 text-primary font-semibold py-2 px-4 rounded-lg hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">Call</button>
+<button class="flex-1 text-sm bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 font-semibold py-2 px-4 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Message</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-dark text-gray-400 py-6">
+<div class="container mx-auto px-6 text-center">
+<p class="text-sm">For any queries, contact us at <a class="font-semibold text-primary/80 hover:text-primary" href="mailto:support@Scraplink.in">support@Scraplink.in</a> or call <a class="font-semibold text-primary/80 hover:text-primary" href="tel:91-9876543210">91-9876543210</a></p>
+<p class="text-xs mt-2 text-gray-500">© 2024 Scraplink. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+
+</body></html>
